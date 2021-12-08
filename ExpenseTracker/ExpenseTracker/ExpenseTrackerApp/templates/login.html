@@ -5,7 +5,8 @@
     <title>Login Info</title>
 </head>
 <body>
-<form method="post">
+<form method="post" action="home/">
+    {% CSRF TOKEN %)
     <table border="0px">
         <tr>
             <td><h3 align="center">Expense Tracker</h3></td>
@@ -20,7 +21,7 @@
         </tr>
        <tr>
            <td><input type="submit" value="Login"></td>
-           <td><input type="button" value="Sign Up"></td>
+           <td><button><a href="signup/">Signup</a></button> </td>
        </tr>
     </table>
 </form>
